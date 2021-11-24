@@ -1,0 +1,202 @@
+/*header*/
+
+header {
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+
+h1 img {
+    position: relative;
+    left: 48px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav ul {
+    position: absolute;
+    top: 105px;
+    right: 118px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(97, 87, 32);
+    text-decoration: underline;
+}
+
+nav a:active {
+    color: rgb(86, 129, 86);
+    text-decoration: underline;
+}
+
+
+/*main*/
+
+main {
+    margin-bottom: 40px;
+}
+
+body {
+    background-image: linear-gradient(to bottom, rgb(255, 196, 87) 45%, rgb(129, 119, 109) 55%);
+}
+
+#banner {
+    width: 100%;
+    opacity: 1;
+}
+
+.principal {
+    margin: 0 30px;
+    padding: 0 30px;
+}
+
+#utensilios {
+    width: 118px;
+    float: left;
+    margin: 0 20px 20px 0;
+    opacity: 0.9;
+}
+
+.em {
+    margin-top: 20px;
+}
+
+.titulo-principal {
+    font-family: serif;
+    text-align: center;
+    margin: 15px 0 1em;
+    font-size: 37px;
+    clear: left;
+}
+
+.principal p {
+    margin: 0 0 1em;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+#clear-left {
+    clear: left;
+}
+
+.beneficios {
+    margin: 40px;
+}
+
+.beneficios h3 {
+    text-align: center;
+    margin: 10px 0 1em;
+    font-size: 30px;
+}
+
+.img_beneficios {
+    width: 60%;
+}
+
+.mapa iframe {
+    padding: 3em 0;
+}
+
+.mapa {
+    margin: 20px 40px;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.beneficios img {
+    width: 560px;
+    height: 315px;
+    margin-left: 100px;
+    margin-right: 100px;
+    opacity: 1;
+    transition: 0.8s all;
+    box-shadow: 10px 10px 10px rgb(104, 61, 30);
+}
+
+.beneficios iframe {
+    clear: left;
+}
+
+li {
+    margin: 5px 10px;
+    transition: 0.3s all;
+    display: inline-block;
+}
+
+ul {
+    text-align: center;
+}
+
+li:hover {
+    color: rgb(49, 7, 7);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.beneficios img:hover {
+    opacity: 0.5;
+}
+
+
+/*footer*/
+
+footer {
+    text-align: right;
+    background: #BBBBBB url("bg.jpg");
+    padding: 10px 0;
+}
+
+footer p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+    color: white;
+    position: absolute;
+    top: 287%;
+    left: 37px
+}
+
+
+/*adaptação celular*/
+
+@media screen and (max-width: 480px) {
+    .principal,
+    .mapa,
+    .beneficios {
+        width: auto;
+    }
+    h1 {
+        text-align: center;
+    }
+    nav {
+        position: static;
+    }
+    ul,
+    .img_beneficios {
+        width: 100%;
+    }
+    footer p {
+        position: absolute;
+        top: 200%;
+    }
+}

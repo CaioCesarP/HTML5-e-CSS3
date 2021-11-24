@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos | Barbearia Alura</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/contatos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <h1><img src="../imagens/logo.png" alt="logo da Barbearia Alura"></h1>
+
+        <nav>
+            <ul>
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/produtos.html">Produtos</a></li>
+                <li><a href="../html/contatos.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            <div class="form">
+                <label for="nomesobrenome"><i class="fa fa-user" aria-hidden="true"></i> Nome e sobrenome <span class="red-preencher">*</span></label>
+                <input type="text" class="input-form" id="nomesobrenome" required>
+
+                <label for="email"><i class="fa fa-envelope" aria-hidden="true"></i> Email <span class="red-preencher">*</span></label>
+                <input type="email" class="input-form" id="email" placeholder="SeuEmail@dominio.com" required>
+
+                <label for="telefone"><i class="fa fa-phone" aria-hidden="true"></i> Telefone <span class="red-preencher">*</span></label>
+                <input type="tel" class="input-form" id="telefone" placeholder="(XX) XXXX-XXXX">
+
+                <label for="mensagem"><i class="fa fa-file-text" aria-hidden="true"></i> Mensagem <span class="red-preencher">*</span></label>
+                <textarea id="mensagem" cols="68" rows="8"></textarea>
+            </div>
+            <div class="radio">
+                <p>Como prefere o nosso retorno? <i class="fa fa-reply" aria-hidden="true"></i></p>
+
+                <label for="email-radio"><i class="fa fa-envelope" aria-hidden="true"></i> Email<input type="radio" name="contato" id="email-radio" value="email"></label>
+
+                <label for="telefone-radio"><i class="fa fa-phone" aria-hidden="true"></i> Telefone<input type="radio" name="contato" id="telefone-radio" value="email"></label>
+
+                <label for="whatsapp-radio"><i class="fa fa-whatsapp" aria-hidden="true"></i> whatsapp<input type="radio" name="contato" id="whatsapp-radio" value="whatsapp" checked></label>
+
+            </div>
+            <div class="select">
+                <p>Qual horario prefere ser atendido? <span class="red-preencher">*</span></p>
+                <i class="fa fa-clock-o" aria-hidden="true"></i><select id="">
+                    <option value="">Manhã</option>
+                    <option value="">Tarde</option>
+                    <option value="">Noite</option>
+                </select>
+
+            </div>
+            <div class="receber">
+                <label>Gostaria de receber novidades por email? <i class="fa fa-inbox" aria-hidden="true"></i> <input type="checkbox"></label>
+            </div>
+
+            <input type="submit" id="submit" value="enviar formulário">
+
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <td>Dia</td>
+                    <td>Horário</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <img src="../imagens/logo-branco.png" alt="logo da Barbearia Alura">
+        <p>&copy; Copyrigth Barbearia Alura - 2019</p>
+    </footer>
+</body>
+
+</html>
